@@ -230,7 +230,7 @@ public class VoicemailContentTable implements VoicemailTable.Delegate {
 
         checkForSupportedColumns(ALLOWED_COLUMNS, values, "Updates are not allowed.");
         checkUpdateSupported(uriData);
-        
+
         final SQLiteDatabase db = mDbHelper.getWritableDatabase();
         // TODO: This implementation does not allow bulk update because it only accepts
         // URI that include message Id. I think we do want to support bulk update.
